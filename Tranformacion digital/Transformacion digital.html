@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultoría y soluciones de transformación digital para empresas.">
+    <title>Digital Transform - Transformación Digital para tu Empresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Menú principal">
+            <div class="logo">Digital Transform</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#why-us">Por qué nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="hamburger" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Transformación Digital para tu Empresa</h1>
+                <p>Impulsa tu negocio al siguiente nivel con soluciones tecnológicas innovadoras y personalizadas.</p>
+                <div class="hero-buttons">
+                    <button id="registerButton" class="cta-button outline-button" type="button">Registrarse</button>
+                    <button id="loginButton" class="cta-button outline-button" type="button">Iniciar Sesión</button>
+                    <button id="ctaButton" class="cta-button" type="button">Solicita una Consulta</button>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-copy">Soluciones diseñadas para acompañar tu transformación digital en cada etapa.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Consultoría Estratégica</h3>
+                    <p>Analizamos tu negocio y diseñamos una estrategia tecnológica alineada con tus objetivos empresariales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Desarrollo de Soluciones</h3>
+                    <p>Creamos aplicaciones y plataformas personalizadas que se adapten perfectamente a tus necesidades.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Migración a la Nube</h3>
+                    <p>Trasladamos tu infraestructura a la nube de forma segura, eficiente y sin interrupciones.</p>
+                </div>
+            </div>
+        </section>
+        <section id="why-us" class="why-us">
+            <h2 class="section-title">Por qué elegir Digital Transform</h2>
+            <p class="section-copy">Nuestra experiencia y enfoque práctico garantizan resultados reales para tu empresa.</p>
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-number">✓</div>
+                    <div class="feature-text">
+                        <h4>10+ Años de Experiencia</h4>
+                        <p>Década de trayectoria transformando empresas y adaptándonos a la evolución del mercado digital.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">✓</div>
+                    <div class="feature-text">
+                        <h4>Equipo Especializado</h4>
+                        <p>Profesionales certificados y expertos en las últimas tecnologías y tendencias del sector.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">✓</div>
+                    <div class="feature-text">
+                        <h4>Soporte 24/7</h4>
+                        <p>Disponibles en todo momento para resolver dudas y garantizar el funcionamiento óptimo de tus sistemas.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">✓</div>
+                    <div class="feature-text">
+                        <h4>ROI Garantizado</h4>
+                        <p>Nuestras soluciones están diseñadas para generarte resultados medibles y rentabilidad real.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">✓</div>
+                    <div class="feature-text">
+                        <h4>Metodología Ágil</h4>
+                        <p>Procesos flexibles y colaborativos que se adaptan a los cambios de tus requerimientos.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">✓</div>
+                    <div class="feature-text">
+                        <h4>Seguridad y Compliance</h4>
+                        <p>Cumplimiento con normativas internacionales y protección máxima de tus datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="auth-section" class="form-section hidden">
+            <h2 class="section-title">Acceso a tu cuenta</h2>
+            <p class="section-copy">Elige si quieres registrarte para enviar tu consulta o iniciar sesión con el correo y la contraseña que ya registraste.</p>
+            <div class="auth-panel">
+                <div id="register-section" class="auth-card">
+                    <h3>Registrarse</h3>
+                    <p class="section-copy">Completa estos datos para registrarte por primera vez y enviar tu consulta.</p>
+                    <form id="consultaForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input id="nombre" name="nombre" class="form-input" type="text" placeholder="Juan Pérez" required>
+                                <span class="form-error" data-error-for="nombre"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input id="email" name="email" class="form-input" type="email" placeholder="juan@ejemplo.com" required>
+                                <span class="form-error" data-error-for="email"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input id="telefono" name="telefono" class="form-input" type="tel" placeholder="+34 612 345 678" required>
+                                <span class="form-error" data-error-for="telefono"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="empresa">Empresa</label>
+                                <input id="empresa" name="empresa" class="form-input" type="text" placeholder="Digital Transform S.L." required>
+                                <span class="form-error" data-error-for="empresa"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword">Contraseña</label>
+                                <input id="registerPassword" name="registerPassword" class="form-input" type="password" placeholder="Crea una contraseña segura" required>
+                                <span class="form-error" data-error-for="registerPassword"></span>
+                            </div>
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label for="sitio">Sitio Web</label>
+                                <input id="sitio" name="sitio" class="form-input" type="url" placeholder="https://www.digitaltransform.es" required>
+                                <span class="form-error" data-error-for="sitio"></span>
+                            </div>
+                        </div>
+                        <div style="text-align:center; margin-top: 1.5rem;">
+                            <button class="submit-button" type="submit">Enviar Formulario</button>
+                        </div>
+                        <p id="formSuccess" class="form-success" aria-live="polite"></p>
+                    </form>
+                </div>
+                <div id="login-section" class="auth-card hidden">
+                    <h3>Iniciar Sesión</h3>
+                    <p class="section-copy">Introduce tu correo electrónico y contraseña para iniciar sesión sin registrarte de nuevo.</p>
+                    <form id="loginForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="loginEmail">Correo Electrónico</label>
+                                <input id="loginEmail" name="loginEmail" class="form-input" type="email" placeholder="juan@ejemplo.com" required>
+                                <span class="form-error" data-error-for="loginEmail"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Contraseña</label>
+                                <input id="loginPassword" name="loginPassword" class="form-input" type="password" placeholder="Contraseña segura" required>
+                                <span class="form-error" data-error-for="loginPassword"></span>
+                            </div>
+                        </div>
+                        <div style="text-align:center; margin-top: 1.5rem;">
+                            <button class="submit-button" type="submit">Iniciar Sesión</button>
+                        </div>
+                        <p id="loginSuccess" class="form-success" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Digital Transform</h4>
+                <p>Somos una consultora especializada en transformación digital que ayuda a empresas a modernizar sus procesos y maximizar su potencial tecnológico.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#why-us">Por qué nosotros</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <div class="contact-info">
+                    <span class="contact-icon">📍</span>
+                    <p>Calle Principal 123, Madrid, España</p>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-icon">📞</span>
+                    <p>+34 (91) 234-5678</p>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-icon">✉️</span>
+                    <p>info@digitaltransform.es</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Digital Transform. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
